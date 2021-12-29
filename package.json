@@ -1,0 +1,59 @@
+{
+  "name": "react-redux-jest-boilerplate",
+  "version": "1.0.0",
+  "description": "Getting Started with ReactJS, Redux, Jest and Webpack",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.dev.js",
+    "serve": "webpack-dev-server --config webpack.dev.js",
+    "start": "npm run build && npm run serve",
+    "test": "jest --watch --verbose"
+  },
+  "keywords": [
+    "React",
+    "Redux",
+    "Jest",
+    "Webpack"
+  ],
+  "author": "Joselyn Dos Ramos",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^24.8.0",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.13.0",
+    "file-loader": "^4.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^24.8.0",
+    "redux-mock-store": "^1.5.3",
+    "regenerator-runtime": "^0.13.2",
+    "webpack": "^4.33.0",
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.6.0",
+    "webpack-merge": "^4.2.1"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-redux": "^7.0.3",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0"
+  },
+  "jest": {
+    "setupFiles": [
+      "./jest.setup.js"
+    ]
+  }
+}

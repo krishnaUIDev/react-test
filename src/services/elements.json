@@ -1,0 +1,16 @@
+{
+  "elements": [
+    { 
+      "id": 1,
+      "name": "Element 1"
+    },
+    { 
+      "id": 2,
+      "name": "Element 2"
+    },
+    { 
+      "id": 3,
+      "name": "Element 3"
+    }
+  ]
+}
