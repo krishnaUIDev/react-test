@@ -13,18 +13,20 @@ describe("App", () => {
   let wrapper;
   const mockStore = configureStore([thunk]);
   const store = mockStore({
-    elements: {},
+    elements: [],
+    message: 'HI',
   });
   beforeEach(() => {
-    wrapper = shallow(
+    wrapper = mount(
       <Provider store={store}>
         <App />
       </Provider>
-    ).dive();
+    );
   });
   it("should render component", () => {
-    console.log(wrapper.debug());
-    expect(wrapper.find(Message)).toHaveLength(1);
+    expect(wrapper.find('Message')).toHaveLength(1);
+    expect(wrapper.find('[data-id="message"]')).toHaveLength(1);
+
   });
 });
 //

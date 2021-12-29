@@ -10,11 +10,14 @@ const Message = ({ message, handleUpdateMessage }) => (
   <h1
     onClick={() => handleUpdateMessage()}
     role="presentation"
-    onKeyDown={() => {}}
+    onKeyDown={() => { }}
+    data-id='message'
   >
-    { message }
+    {message}
   </h1>
 );
+
+Message.displayName = 'Message';
 
 Message.propTypes = propTypes;
 export default Message;
